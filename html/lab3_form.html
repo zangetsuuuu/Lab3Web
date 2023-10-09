@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Onest:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <title>HTML Lanjutan</title>
+    <style>
+        body {
+            font-family: "Onest", sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            margin: 20px;
+        }
+
+        form {
+            background-color: white;
+            border-radius: 5px;
+            padding: 24px;
+            margin: 20px;
+            width: 50%;
+        }
+
+        legend {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        label {
+            display: inline-block;
+            margin-bottom: 4px;
+        }
+
+        input[type="text"], textarea {
+            width: 95.75%;
+            padding: 12px;
+            margin-bottom: 16px;
+            margin-right: 20px;
+            border: 1px solid rgb(151, 151, 151);
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            display: inline-block;
+            width: 100%;
+            padding: 10px 20px;
+            margin-top: 12px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 4px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Membuat Form</h1>
+    </header>
+
+    <form action="proses.php" method="post">
+        <fieldset>
+            <legend>Data Pelanggan</legend>
+            <p>
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama">
+            </p>
+            <p>
+                <label for="alamat">Alamat</label>
+                <textarea name="alamat" id="alamat" cols="20" rows="3"></textarea>
+            </p>
+            <p>
+                <label>Jenis Kelamin :</label>
+                <input type="radio" id="jk_l" name="kelamin" value="L">
+                <label for="jk_1">Laki-laki</label>
+                <input type="radio" id="jk_p" name="kelamin" value="P">
+                <label for="jk_p">Perempuan</label>
+            </p>
+            <p>
+                <input type="submit" value="Login">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
