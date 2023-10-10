@@ -3,9 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Onest:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <title>Form</title>
+    <style>
+        * {
+            font-family: "Onest", sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 60px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            padding-bottom: 8px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 95.5%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        select,
+        select[multiple] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        select[multiple] {
+            height: auto;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <h2>Form</h2>
+        <form action="#" method="post">
+            <label for="nama">Nama:</label>
+            <input type="text" name="nama" id="nama" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="dropdown">Dropdown:</label>
+            <select id="dropdown" name="dropdown">
+                <option value="A">Opsi A</option>
+                <option value="B">Opsi B</option>
+                <option value="C">Opsi C</option>
+            </select>
+
+            <label for="listbox">Listbox:</label>
+            <select id="listbox" name="listbox[]" multiple>
+                <option value="1">List 1</option>
+                <option value="2">List 2</option>
+                <option value="3">List 3</option>
+                <option value="4">List 4</option>
+                <option value="5">List 5</option>
+                <option value="6">List 6</option>
+                <option value="7">List 7</option>
+                <option value="8">List 8</option>
+                <option value="9">List 9</option>
+                <option value="10">List 10</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 </body>
 </html>

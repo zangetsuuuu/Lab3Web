@@ -350,3 +350,9 @@ Kelas : TI.22.A3
 ### Pertanyaan
 
 - Buatlah form yang menampilkan _dropdown_ menu dan _listbox_ dengan _multiple selection_.
+
+![Tugas](./images/Tugas.jpeg)
+
+---
+
+## Sekian, terimakasih
